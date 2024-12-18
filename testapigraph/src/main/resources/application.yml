@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: testapigraph      
+
+file:
+  dir: src/main/resources/uploads 
+
+#instagram:
+#  access-token: ${INSTAGRAM_ACCESS_TOKEN}
+#  account-id: ${INSTAGRAM_ACCOUNT_ID}
+
+#facebook:
+#  access-token: ${FACEBOOK_ACCESS_TOKEN}
+#  page-id: ${FACEBOOK_PAGE_ID}
+
+instagram:
+  access-token: IGQWROS1FXQlpmUmtESkVvclVxTTctR1dFc3k0U3ZA0YmNvTXlGbVhyR2p4MXNWZAGdfQmJTRVBkaGdDME1hbFFMdGE3NlNCWjdLWjlyZA25YWkpWT191ektYMmRHc19NLXJsXzQ3bzBZAbW5ka2NEYjdtN21oU2lKM3MZD
+  account-id: 17841470907384525
+
+facebook:
+  access-token: EAANZAtT011ssBOynh6W5YyoEO4Hh9i1LptrXZCJJF2KS3kZBH83nn6nahbQQTmzNpZAAJKq4lZCSgknlAPinKEFBrorYXZCSPCcH8WxhEak9QrpZBb82L42a4AHvhpnYvohnZC8FQ9ZAZC8ZCOUzBaqWRh9yevFbmptzZCTWgeySiCDK1IRShWmBviP8F1lzOI3P
+  page-id: 252519138155274
