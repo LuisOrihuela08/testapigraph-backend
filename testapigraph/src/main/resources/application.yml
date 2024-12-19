@@ -2,8 +2,11 @@ spring:
   application:
     name: testapigraph      
 
-file:
-  dir: src/main/resources/uploads 
+cloudinary:
+  cloud_name: ${CLOUDINARY_CLOUD_NAME}
+  api_key: ${CLOUDINARY_API_KEY}
+  api_secret: ${CLOUDINARY_API_SECRET}
+
 
 instagram:
   access-token: ${INSTAGRAM_ACCESS_TOKEN}
@@ -12,4 +15,7 @@ instagram:
 facebook:
   access-token: ${FACEBOOK_ACCESS_TOKEN}
   page-id: ${FACEBOOK_PAGE_ID}
+  
+#file:
+#  dir: src/main/resources/uploads 
 

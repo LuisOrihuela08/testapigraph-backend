@@ -1,5 +1,6 @@
 package com.example.apigraph.controller;
 
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -36,12 +37,13 @@ public class PostController {
 	@Autowired
 	private PostService postService;
 	
-	@Value("${file.dir}")
-	private String uploadDir;
+	//@Value("${file.dir}")
+	//private String uploadDir;
 	
+	/*
 	@PostMapping("/create")
 	public ResponseEntity<Map<String, String>> createPost (@RequestParam("caption") String caption,
-											  				@RequestParam("imageName") MultipartFile  imageName){
+											  			   @RequestParam("imageName") MultipartFile  imageName){
 		
 		try {
 			String filename = postService.createPost(caption, imageName);
@@ -120,4 +122,32 @@ public class PostController {
 			return ResponseEntity.internalServerError().body(null);
 		}
 	}
+	*/
+	
+	@PostMapping("/create")
+	public ResponseEntity<Map<String, String>> createPost(
+	    @RequestParam("caption") String caption, 
+	    @RequestParam("imageName") MultipartFile imageName) {
+	    Map<String, String> response = new HashMap<>();
+	    try {
+	        String imageUrl = postService.createPost(caption, imageName);
+
+	        response.put("message", "Post creado con éxito");
+	        response.put("caption", caption);
+	        response.put("imageName", imageUrl);
+
+	        return ResponseEntity.status(HttpStatus.CREATED).body(response);
+	    } catch (IOException e) {
+	        response.put("message", "Hubo un error al crear el post: " + e.getMessage());
+	        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(response);
+	    }
+	}
+	    
+
+	    // Endpoint para obtener todos los posts
+	    @GetMapping("/list")
+	    public ResponseEntity<List<Post>> getAllPosts() {
+	        List<Post> posts = postService.getAllPosts();
+	        return ResponseEntity.ok(posts);
+	    }
 }
