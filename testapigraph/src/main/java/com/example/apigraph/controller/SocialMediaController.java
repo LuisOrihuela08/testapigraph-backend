@@ -22,7 +22,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200/",methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE, RequestMethod.OPTIONS})
+@CrossOrigin(origins = "https://cookperu.vercel.app/",methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE, RequestMethod.OPTIONS})
 @RequestMapping("/api/social-media")
 public class SocialMediaController {
 

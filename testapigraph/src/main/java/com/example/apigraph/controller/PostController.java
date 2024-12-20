@@ -30,7 +30,7 @@ import com.example.apigraph.config.PostService;
 import com.example.apigraph.model.Post;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200/",methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE, RequestMethod.OPTIONS})
+@CrossOrigin(origins = "https://cookperu.vercel.app/",methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE, RequestMethod.OPTIONS})
 @RequestMapping("/api/post")
 public class PostController {
 
