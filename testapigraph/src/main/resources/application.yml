@@ -1,6 +1,8 @@
 spring:
   application:
-    name: testapigraph      
+    name: testapigraph 
+  config:
+    import: optional:file:.env[.properties]     
 
 cloudinary:
   cloud_name: ${CLOUDINARY_CLOUD_NAME}
