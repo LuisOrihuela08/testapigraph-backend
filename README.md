@@ -24,6 +24,11 @@ Las imágenes destinadas a las publicaciones son:
 - 🔄 Redimensionamiento automático de imágenes para plataformas sociales.
 - ⚙️ Backend escalable y eficiente desarrollado con Java y Spring Boot.
 
+## Frontend (Landing Page) de prueba para la API
+   ```bash
+   https://github.com/LuisOrihuela08/testapigraph-frontend.git
+   ```
+
 ## 👨‍💻 Autor
 Luis Orihuela Orozco | 
 Backend Developer - 2024
