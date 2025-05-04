@@ -1,4 +1,4 @@
-# 🛠️ Backend Developer – Publicador Automático para Landing Page
+# 🛠️ Backend Developer – Publicador Automático para Landing Page y Redes Sociales (Facebook e Instagram)
 
 ## 📌 Descripción
 
